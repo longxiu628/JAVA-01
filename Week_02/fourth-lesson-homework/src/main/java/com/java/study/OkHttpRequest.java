@@ -33,11 +33,11 @@ public class OkHttpRequest {
                 for (int i = 0, size = responseHeaders.size(); i < size; i++) {
                     System.out.println("【" + responseHeaders.name(i) + "】" + responseHeaders.value(i));
                 }
-
                 System.out.println("【响应结果】" + response.body().string());
             }
         });
     }
+
 
     public String post(String url, String json) throws IOException {
         RequestBody body = RequestBody.create(JSON, json);
