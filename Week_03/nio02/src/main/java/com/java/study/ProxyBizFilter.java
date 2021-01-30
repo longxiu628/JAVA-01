@@ -25,6 +25,6 @@ public class ProxyBizFilter implements HttpRequestFilter {
         if (headers == null) {
             headers = new DefaultHttpHeaders();
         }
-        headers.add("proxy-tag", this.getClass().getSimpleName());
+        headers.add("mao", this.getClass().getSimpleName());
     }
 }

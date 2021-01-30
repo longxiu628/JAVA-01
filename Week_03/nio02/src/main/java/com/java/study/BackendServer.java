@@ -33,8 +33,12 @@ public class BackendServer {
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "utf-8"));
             String line = null;
             while ((line = reader.readLine()) != null){
-                System.out.println(line);
-                break;
+                if(line.startsWith("mao")){
+                    body += line.substring("mao".length() + 1);
+                    System.out.println(line);
+                    break;
+                }
+
             }
             System.out.println("8888888888888888888888888888888");
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
