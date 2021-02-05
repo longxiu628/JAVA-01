@@ -25,6 +25,7 @@ public class HttpInboundInitializer extends ChannelInitializer<SocketChannel> {
 
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+		Thread a = null;
 		String str = "【服务器端】连接通道已经建立成功，可以开始进行服务器通信处理";
 		System.out.println(str);
 		byte[] data = str.getBytes();

@@ -13,6 +13,7 @@ public class CustomClassLoader extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String name) {
+        System.out.println("name = " + name);
         String classFile = "Hello.xlass";
         InputStream is = CustomClassLoader.class.getClassLoader().getResourceAsStream(classFile);
         byte[] binaryBytes = null;
