@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: tcc
+  cloud:
+    nacos:
+      server-addr: 192.168.10.155:8848

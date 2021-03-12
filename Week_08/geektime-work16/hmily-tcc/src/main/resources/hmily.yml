@@ -1,0 +1,21 @@
+hmily:
+  server:
+    configMode: local
+    appName:
+  config:
+    appName: tcc-demo
+    repository: mysql
+  support:
+    rpc:
+      annotation: true
+repository:
+  database:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hmily
+    username: root
+    password:
+    maxActive: 20
+    minIdle: 10
+    connectionTimeout: 30000
+    idleTimeout: 600000
+    maxLifetime: 1800000
